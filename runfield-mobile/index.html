@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Runfield</title>
+    <title>GnutRunner</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <meta name="viewport" content="user-scalable = no;">
     <style>
@@ -605,7 +605,7 @@
                 var rtxt = 'Record: ' + record;
                 var rw = ctx.measureText(rtxt).width;
                 ctx.fillText(rtxt, (800-rw-24*magF), 44*magF);
-                var overText = 'You fell in a ditch.';
+                var overText = 'You Dead!.';
                 var gw = ctx.measureText(overText).width;
                 ctx.fillText(overText, (400-gw/2), 240*magF);
                 var againText = 'Click to Retry';
@@ -619,7 +619,7 @@
                 var src = (
                   'http://platform.twitter.com/widgets/tweet_button.html?via=mozhacks&count=horizontal&lang=en'
                   + '&url=' + encodeURIComponent(document.location.toString())
-                ) + '&text='+encodeURIComponent('Ran into a ditch after amassing '+points+' points in #RunfieldSD');
+                ) + '&text='+encodeURIComponent('You failed after amassing '+points+' points in #Gnutrunner');
                 if (tweeter.currentSrc != src) {
                   tweeter.currentSrc = src;
                   tweeter.contentWindow.location.replace(src);
